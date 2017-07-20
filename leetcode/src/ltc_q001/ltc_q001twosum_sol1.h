@@ -6,7 +6,7 @@ using namespace std;
 // Computational Complexity is O(n^2), since in the worst case,
 // the iterator would loop through the vector twice
 
-class Solution {
+class Solution1 {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         
@@ -18,5 +18,8 @@ public:
                 }
             }
         }
+        // -1 represents failure
+        vector<int> emptyResult = {-1, -1};
+        return emptyResult;
     }
 };
