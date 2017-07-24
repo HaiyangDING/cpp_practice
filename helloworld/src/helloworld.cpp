@@ -7,7 +7,7 @@ using namespace std;
 int main() {
 
 	/* 
-	// ? operator
+	// try ? operator
 	cout << "Hello World" << endl;
 
 	int largestNum = (5>2) ? 5 : 2;
@@ -40,14 +40,15 @@ int main() {
 
 	int* badNumsPtr = badNums;
 
-	cout << "badNumsPtr - Address: " << badNumsPtr << ", Value: " << *badNumsPtr << endl;
-	cout << "badNums - address: " << &badNums  << ", badNums value: " << *badNums << endl;
+	cout << "badNumsPtr \n address(badNumsPtr): \t" << badNumsPtr << "\n Value(*badNumsPtr): \t" << *badNumsPtr << endl;
+	cout << "badNums \n address(&badNums): \t" << &badNums  << "\n array name(badNums): \t" << badNums << "\n value(*badNums): \t" << *badNums << endl;
 
 	badNumsPtr ++;
+	cout << "after `badNumsPtr ++;`" << endl;
 
-	cout << "AbadNumsPtr - ddress: " << badNumsPtr << ", Value: " << *badNumsPtr << endl;
-	cout << "badNums - address: " << &badNums  << ", badNums value: " << *badNums << endl;
-	
+	cout << "badNumsPtr \n address(badNumsPtr): \t" << badNumsPtr << "\n Value(*badNumsPtr): \t" << *badNumsPtr << endl;
+	cout << "badNums \n address(&badNums): \t" << &badNums  << "\n array name(badNums): \t" << badNums << "\n value(*badNums): \t" << *badNums << endl;
+
 	return 0;
 
 }
